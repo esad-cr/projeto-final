@@ -33,7 +33,7 @@ As páginas `index.html`, `sobre-mim.html`, `projetos.html` e `contactos.html` s
 - **processing.html** → Projetos desenvolvidos em Processing (com canvas)
 
 ## Estrutura do Projeto
-![Estrutura](images/readme/estrutura.jpg)
+![Estrutura](imagens/readme/estrutura.jpg)
 ## Autor
 - Nome do aluno/a
 
