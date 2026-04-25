@@ -96,6 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-size: 16px;
+*
 }
 
 small {
@@ -110,7 +111,36 @@ a {
 a:hover, a:visited, a:active {
   text-decoration: none;
   color: #fcca46;
+  
 }
+/************************************
+******** largura dos elemento *******
+******** que compoem o body *********
+*************************************/
+/* utilizando tags */
+body header, body main, body footer {
+ width: 100%;
+ max-width: 1680px;
+ margin: 0 auto;
+ padding: 0 16px;
+}
+
+/* utilizando id */
+#topHeader, #mainContent, #mainFooter {
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* utilizando classes */
+.pageWidth {
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
 /*********************************************
 **** Definição da tipografia para mobile *****
 *********************************************/
