@@ -85,9 +85,40 @@ iframe, video {
 *** O SEU CÓDIGO COMEÇA DEPOIS DESTE COMENTÁRIO ***
 ***************************************************
 ***************************************************/
+
+/***************** VARIABLES CSS ******************/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --black-color: hsl(220, 24%, 12%);
+  --black-color-light: hsl(220, 24%, 15%);
+  --black-color-lighten: hsl(220, 20%, 18%);
+  --white-color: #fff;
+  --body-color: hsla(90, 34%, 63%, .5);
+  --primary-color: hsla(9, 73%, 50%, 1);
+  --secondary-color: hsla(203, 37%, 22%, 1);
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --normal-font-size: .938rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/*****************  Estilos Base ******************/
+
 body{
   font-size: 16px;
   font-family: "Fira Sans", sans-serif;
+  background-color: var(--body-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,11 +127,16 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-size: 16px;
-*
 }
 
 small {
   font-size: 0.8rem;
+}
+
+ul {
+  list-style: none;
+  /* Color highlighting when pressed on mobile devices */
+  /*-webkit-tap-highlight-color: transparent;*/
 }
 
 a {
@@ -110,7 +146,7 @@ a {
 
 a:hover, a:visited, a:active {
   text-decoration: none;
-  color: #fcca46;
+  color: var(--primary-color);
   
 }
 /************************************
@@ -180,3 +216,7 @@ h3{
     font-size: 3.998rem;
   }
 }
+
+/****************************************
+********** menu de navegação ************
+****************************************/
