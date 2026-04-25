@@ -94,6 +94,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: lato, sans-serif;
 }
 
+p {
+  font-size: 16px;
+}
+
+small {
+  font-size: 0.8rem;
+}
+
 a {
   text-decoration: none;
   color: #233d4d;
