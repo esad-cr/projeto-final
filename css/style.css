@@ -94,6 +94,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: lato, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #233d4d;
+}
+
+a:hover, a:visited, a:active {
+  text-decoration: none;
+  color: #fcca46;
+}
 /*********************************************
 **** Definição da tipografia para mobile *****
 *********************************************/
