@@ -236,9 +236,20 @@ h3{
 
 #mainMenu {
   height: var(--header-height);
+  width: 100%;
+  max-width:1680px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .navBurger, 
 .navClose {
   color: var(--black-color);
+}
+
+.navAction {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
