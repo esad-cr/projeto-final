@@ -148,10 +148,8 @@ a {
   color: #233d4d;
 }
 
-a:hover, a:visited, a:active {
-  text-decoration: none;
-  color: var(--primary-color);
-  
+a:hover, a:active, a.active {
+  color: var(--primary-color);  
 }
 /************************************
 ******** largura dos elemento *******
