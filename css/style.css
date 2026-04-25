@@ -381,3 +381,22 @@ h3{
     background-color: transparent;
   }
 }
+
+
+/****************************************
+************* mainContent ***************
+****************************************/
+
+#mainContent {
+  margin-top:var(--header-height)!important;
+}
+
+
+/****************************************
+************* mainFooter ***************
+****************************************/
+
+#mainFooter {
+  padding: 20px;
+  text-align: center;
+}
