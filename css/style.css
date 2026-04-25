@@ -234,3 +234,11 @@ h3{
   z-index: var(--z-fixed);
 }
 
+#mainMenu {
+  height: var(--header-height);
+}
+
+.navBurger, 
+.navClose {
+  color: var(--black-color);
+}
