@@ -184,20 +184,20 @@ body header, body main, body footer {
 **** Definição da tipografia para mobile *****
 *********************************************/
 
-h1{
+h1, .h1{
   font-size: 2.986rem;
   font-weight: 700;
   letter-spacing: 0.22rem;
   line-height: 1.5;
 }
 
-h2{
+h2, .h2{
   font-size: 2.488rem;
   font-weight: 700;
   line-height: 1.15;
 }
 
-h3{
+h3, .h3{
   font-size: 2.074rem;
   font-weight: 500;
   line-height: 1;
@@ -207,16 +207,28 @@ h3{
 **** Definição da tipografia para desktop *****
 *********************************************/
 @media (min-width: 992px) {
-  h1{
+  h1, .h1{
     font-size: 7.993rem;
   }
 
-  h2{
+  h2, .h2{
     font-size: 5.653rem;
   }
 
-  h3{
+  h3, .h3{
     font-size: 3.998rem;
+  }
+
+  h4, .h4{
+    font-size: 2.2827rem;
+  }
+
+  h5, .h5{
+    font-size: 1.9999rem;
+  }
+
+  h6, .h6{
+    font-size: 1.414rem;
   }
 }
 
@@ -387,6 +399,69 @@ h3{
   margin-top:var(--header-height)!important;
 }
 
+/* Hero Section 1 */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+}
+.left-hero{
+  width: 60%;
+  z-index: var(--z-tooltip);
+}
+
+.right-hero{
+  width: 40%;
+  position: relative;
+}
+/* Navigation for large devices */
+@media screen and (max-width: 992px) {
+  .left-hero{
+    width: 100%;
+    z-index: var(--z-tooltip);
+  }
+
+  .right-hero{
+    display: none;
+  }
+}
+
+h1.heading-text {
+    color: var(--primary-color);
+    margin: 5rem 5.5rem 2rem 0;
+}
+
+h1.heading-text span {
+    color: var(--secondary-color)
+}
+
+p.description {
+    color:var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.btn {
+    border: none;
+    color: #FFFFFF;
+    background-color:var(--primary-color);
+    padding: 1.25rem 2.5rem;
+    border-radius: 12px;
+}
+
+.btn:hover {
+    background-color:var(--secondary-color);
+    cursor: pointer;
+}
+
+.banner-container:last-child {
+    margin-top: 5rem;
+}
+
+.banner-container div img{
+  max-width: fit-content;
+  position: absolute;
+  right: -16px;
+}
 
 /****************************************
 ************* mainFooter ***************
