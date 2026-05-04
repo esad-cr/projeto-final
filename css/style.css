@@ -330,15 +330,14 @@ h6, .h6{
     width: 100%;
     height: calc(100vh - 3.5rem);
     overflow: auto;
-    /*pointer-events: none;
-    opacity: 0;*/
-    transition: top .4s, opacity .3s;
+    pointer-events: none;
+    opacity: 0;
+    transition: height .4s, opacity .3s;
   }
   .nav__menu::-webkit-scrollbar {
     width: 0;
   }
   .nav__list {
-    background-color: var(--white-color);
     padding-top: 1rem;
   }
 }
@@ -399,6 +398,7 @@ h6, .h6{
     padding: 0;
     justify-content: initial;
     column-gap: .25rem;
+    background-color: transparent;
   }
   .nav__link:hover {
     background-color: transparent;
@@ -412,7 +412,14 @@ h6, .h6{
 
 #mainContent {
   margin-top:var(--header-height)!important;
-}/****************************************
+}
+
+@media screen and (min-width: 992px) {
+  #mainContent {
+    margin-top:calc(var(--header-height)+2rem)
+  }
+}
+/****************************************
 ************* mainFooter ***************
 ****************************************/
 
