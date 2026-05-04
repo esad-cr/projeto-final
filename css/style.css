@@ -419,11 +419,10 @@ h3, .h3{
   width: 40%;
   position: relative;
 }
-/* Navigation for large devices */
+/* Navigation for mobile/tablet devices */
 @media screen and (max-width: 992px) {
   .left-hero{
     width: 100%;
-    z-index: var(--z-tooltip);
   }
 
   .right-hero{
@@ -448,7 +447,7 @@ p.description {
 
 .btn {
     border: none;
-    color: #FFFFFF;
+    color: var(--white-color);
     background-color:var(--primary-color);
     padding: 1.25rem 2.5rem;
     border-radius: 12px;
