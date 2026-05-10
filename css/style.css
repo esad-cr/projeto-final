@@ -98,6 +98,7 @@ iframe, video {
   --body-color: hsla(90, 34%, 63%, .5);
   --primary-color: hsla(9, 73%, 50%, 1);
   --secondary-color: hsla(203, 37%, 22%, 1);
+  --third-color: hsla(162, 23%, 49%, 1);
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   /*--body-font: "Montserrat", sans-serif;*/
@@ -255,7 +256,16 @@ h6, .h6{
     font-size: 1.414rem;
   }
 }
+.text_center{
+  text-align: center;
+}
+.white_text{
+  color:var(--white-color);
+}
 
+.invert_filter{
+  filter: invert(1);
+}
 /****************************************
 ********** menu de navegação ************
 ****************************************/
@@ -426,6 +436,95 @@ h6, .h6{
 @media screen and (min-width: 992px) {
   #mainContent {
     margin-top:calc(var(--header-height)+2rem)
+  }
+}
+
+/*---- Definir o flex/autolayout ----*/
+.container {
+  --gap: 0;
+  padding: 2rem;
+  
+}
+.flex {
+  display: flex;
+  gap: var(--gap, 1em);
+}
+.box_shadow {
+  box-shadow: 3px 3px 15px 2px rgba(0,0,0,0.52)
+}
+.border_radius {
+  border-radius: 8px;
+}
+.flex-column {
+  flex-direction: column;
+  margin-left: auto;
+}
+.grid {
+  display: grid;
+  gap: var(--gap, 1em);
+}
+
+/*---- Definir as backgroundcolors ----*/
+.bg-primary-color {
+  background-color: var(--primary-color);
+}
+.bg-secondary-color {
+  background-color: var(--secondary-color)
+}
+.bg-third-color {
+  background-color: var(--third-color);
+}
+/*---- articles - estilo do card ----*/
+.container article:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.container article:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.container article {
+  --gap: 2em;
+  line-height: 1.5;
+  padding: 3em;
+}
+.container article > img {
+  width: 4rem;
+}
+
+/*----- botões -----*/
+.learn-more-button {
+  border: none;
+  border-radius: 40px;
+  letter-spacing: 1px;
+  padding-block: 0.79em;
+  padding-inline: 2.3em;
+  margin: auto;
+  margin-top: 3em;
+  transition: background-color 200ms ease-in-out;
+}
+
+.learn-more-button:hover {
+  background-color: inherit;
+  outline: 2px solid var(--white-color);
+  color: var(--white-color);
+}
+
+@media screen and (max-width: 992px) {
+  .container .flex{
+    flex-direction: column;
+    max-width: 100%;
+    min-width: 90%;
+  }
+  .container article:first-child {
+    border-radius: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .container article:last-child {
+    border-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
 }
 /****************************************
