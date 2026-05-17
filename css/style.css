@@ -256,6 +256,8 @@ h6, .h6{
     font-size: 1.414rem;
   }
 }
+
+/***** utilidades *****/
 .text_center{
   text-align: center;
 }
@@ -438,7 +440,9 @@ h6, .h6{
     margin-top:calc(var(--header-height)+2rem)
   }
 }
-
+/****************************************
+************* cards ***************
+****************************************/
 /*---- Definir o flex/autolayout ----*/
 .container {
   --gap: 0;
@@ -459,12 +463,8 @@ h6, .h6{
   flex-direction: column;
   margin-left: auto;
 }
-.grid {
-  display: grid;
-  gap: var(--gap, 1em);
-}
 
-/*---- Definir as backgroundcolors ----*/
+/*---- Definir as background-colors ----*/
 .bg-primary-color {
   background-color: var(--primary-color);
 }
