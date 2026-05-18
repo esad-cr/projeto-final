@@ -451,6 +451,7 @@ h6, .h6{
 }
 .flex {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--gap, 1em);
 }
 .box_shadow {
@@ -461,7 +462,9 @@ h6, .h6{
 }
 .flex-column {
   flex-direction: column;
-  margin-left: auto;
+  width:50%;
+  margin-left: 0;
+  margin: 0;
 }
 
 /*---- Definir as background-colors ----*/
@@ -515,6 +518,9 @@ h6, .h6{
     flex-direction: column;
     max-width: 100%;
     min-width: 90%;
+  }
+  .container article {
+    width:100%;
   }
   .container article:first-child {
     border-radius: 0;
