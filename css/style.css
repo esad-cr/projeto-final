@@ -187,7 +187,7 @@ body header, body main, body footer {
 */
 /* utilizando classes */
 
-.pageWidth {
+. idth {
   width: 100%;
   max-width: 1680px;
   margin: 0 auto;
@@ -451,7 +451,7 @@ h6, .h6{
 }
 .flex {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   gap: var(--gap, 1em);
 }
 .box_shadow {
@@ -462,7 +462,7 @@ h6, .h6{
 }
 .flex-column {
   flex-direction: column;
-  width:50%;
+  /*width:50%;*/
   margin-left: 0;
   margin: 0;
 }
