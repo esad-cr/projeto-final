@@ -533,6 +533,12 @@ h6, .h6{
     border-bottom-right-radius: 8px;
   }
 }
+
+.bg_malha {
+  background-size: 25px 25px;
+    background-position: center;
+    background-image: linear-gradient(to right, var(--black-color-light) 1px, transparent 1px), linear-gradient(to bottom, var(--black-color-light) 1px, transparent 1px);
+}
 /****************************************
 ************* mainFooter ***************
 ****************************************/
